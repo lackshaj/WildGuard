@@ -1,0 +1,330 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #354f52;
+  letter-spacing: 0.03em;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2.5rem;
+  color: #354f52;
+}
+
+h5 {
+  text-align: center;
+  color: #354f52;
+}
+
+/*navigation bar*/
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 30;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: #52796f;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.donate {
+  text-decoration: none;
+  color: #1f1f1f;
+  background-color: transparent;
+  border: 2px solid #52796f;
+  padding: 10px 17px;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+}
+
+.petition {
+  text-decoration: none;
+  background-color: #52796f;
+  color: white;
+  border: 2px solid #52796f;
+  padding: 10px 27px;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+}
+
+.petition:hover {
+  color: #52796f;
+  background-color: white;
+}
+
+.donate:hover {
+  color: white;
+  background-color: #52796f;
+}
+
+.alink {
+  color: #2f3e46;
+}
+.alink:hover {
+  color: #52796f;
+  font-size: large;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Article styling for side-by-side */
+article {
+  width: 48%;
+  transition: all 0.3s ease;
+  padding: 20px;
+  border-left: 4px solid #52796f;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(82, 121, 111, 0.5); /* soft green glow */
+}
+
+.about-section {
+  text-align: center;
+  margin: 60px auto 40px;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+/* statistics section */
+.stats {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.stat-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 1rem;
+  color: #354f52;
+  width: 250px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(82, 121, 111, 0.5); /* soft green glow */
+}
+
+.stat {
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.active-petition {
+  text-align: center;
+}
+
+/*aside*/
+aside {
+  width: 260px;
+  padding: 25px;
+  font-family: "Segoe UI", sans-serif;
+  float: right;
+  background-color: #f2f5f4;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  font-size: 1rem;
+}
+
+aside h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #354f52;
+}
+
+aside p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+aside label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+aside input[type="email"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+/*FOOTER */
+.footer {
+  background-color: #354f52;
+  padding: 60px 50px;
+  color: #cad2c5;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-brand {
+  flex: 1.2;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  margin: 8px 0;
+  font-weight: 700;
+}
+
+.footer-brand p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 160px;
+}
+
+.footer-column h3 {
+  color: #cad2c5;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+.footer-column h2 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+.footer-p {
+  color: #cad2c5;
+}
+
+.heart-icon {
+  width: 200px;
+  height: 120px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #40696c;
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  text-align: center;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+}
+
+.engaged {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}

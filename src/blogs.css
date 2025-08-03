@@ -1,0 +1,251 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: black;
+  letter-spacing: 0.03em;
+}
+
+/*navigation bar*/
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 30;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: #52796f;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.donate {
+  text-decoration: none;
+  color: #1f1f1f;
+  background-color: transparent;
+  border: 2px solid #52796f;
+  padding: 10px 17px;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+}
+
+.petition {
+  text-decoration: none;
+  background-color: #52796f;
+  color: white;
+  border: 2px solid #52796f;
+  padding: 10px 27px;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+}
+
+.petition:hover {
+  color: #52796f;
+  background-color: white;
+}
+
+.donate:hover {
+  color: white;
+  background-color: #52796f;
+}
+
+/*BLOG*/
+.blogsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/*FOOTER */
+.footer {
+  background-color: #354f52;
+  padding: 60px 50px;
+  color: #cad2c5;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-brand {
+  flex: 1.2;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  margin: 8px 0;
+  font-weight: 700;
+}
+
+.footer-brand p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 160px;
+}
+
+.footer-column h3 {
+  color: #cad2c5;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+.footer-column h2 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+.footer-p {
+  color: #cad2c5;
+}
+
+.heart-icon {
+  width: 200px;
+  height: 120px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #40696c;
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  text-align: center;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+}
+
+.engaged {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.statement {
+  color: white;
+}
+
+.blogsImages {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.blogsHeader {
+  font-family: "Inter", sans-serif;
+  color: #52796f;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.blogsMainHeader {
+  color: #354f52;
+  text-align: center;
+}
+article {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+article:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+p {
+  line-height: 1.6;
+  color: #444;
+}
+.blogsResources {
+  font-family: "Inter", sans-serif;
+  color: #52796f;
+  margin-bottom: 10px;
+}
+a {
+  color: #2f3e46;
+}
+a:hover {
+  color: #52796f;
+  font-size: large;
+}
+.blogslogo {
+  width: 120px;
+  height: auto;
+}
