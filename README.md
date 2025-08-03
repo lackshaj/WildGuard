@@ -40,5 +40,5 @@ Our mission is to **educate, inspire, and empower** individuals to take meaningf
 - **KWK House B** for keeping the energy high 🎉  
 
 ## 🌐 Try It Out
-> Coming soon: [Hosted Link / GitHub Pages Link if available]
+> Coming soon: [Hosted Link: https://lackshaj.github.io/WildGuard/ ]
 
